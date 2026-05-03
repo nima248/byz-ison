@@ -217,7 +217,7 @@ button:hover {
 }
 
 .settings-section > h2 {
-    font-family: Bitter, serif;
+    font-family: Bitter, "fallback for Bitter";
     margin-bottom: 15px;
 }
 

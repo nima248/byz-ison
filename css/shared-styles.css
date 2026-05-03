@@ -1,7 +1,122 @@
-@import "gentium.css";
-@import "bitter.css";
-@import "ez-psaltica.css";
-@import "ez-fthora.css";
+/*
+This file is from the Gentium project (https://software.sil.org/gentium/).
+Copyright (c) 2003-2025 SIL Global (https://www.sil.org/) with Reserved
+Font Names "Gentium" and "SIL". This Font Software is licensed under the SIL
+Open Font License, Version 1.1 (https://openfontlicense.org).
+*/
+
+/* use Gentium - Regular in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 400;
+  src: url("/assets/fonts/Gentium-Regular.woff2");
+  font-display: swap;
+}
+/* use Gentium - Medium in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 500;
+  src: url("/assets/fonts/Gentium-Medium.woff2");
+  font-display: swap;
+}
+/* use Gentium - SemiBold in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 600;
+  src: url("/assets/fonts/Gentium-SemiBold.woff2");
+  font-display: swap;
+}
+/* use Gentium - Bold in .woff2 format */
+@font-face {
+	font-family: GentiumW;
+  font-weight: 700;
+	src: url("/assets/fonts/Gentium-Bold.woff2");
+  font-display: swap;
+}
+/* use Gentium - ExtraBold in .woff2 format */
+@font-face {
+	font-family: GentiumW;
+  font-weight: 800;
+	src: url("/assets/fonts/Gentium-ExtraBold.woff2");
+  font-display: swap;
+}
+/* use Gentium - Italic in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 400;
+  font-style: italic;
+  src: url("/assets/fonts/Gentium-Italic.woff2");
+  font-display: swap;
+}
+/* use Gentium - MediumItalic in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 500;
+  font-style: italic;
+  src: url("/assets/fonts/Gentium-MediumItalic.woff2");
+  font-display: swap;
+}
+/* use Gentium - SemiBoldItalic in .woff2 format */
+@font-face {
+  font-family: GentiumW;
+  font-weight: 600;
+  font-style: italic;
+  src: url("/assets/fonts/Gentium-SemiBoldItalic.woff2");
+  font-display: swap;
+}
+/* use Gentium - BoldItalic in .woff2 format */
+@font-face {
+	font-family: GentiumW;
+  font-weight: 700;
+  font-style: italic;
+	src: url("/assets/fonts/Gentium-BoldItalic.woff2");
+  font-display: swap;
+}
+/* use Gentium - ExtraBoldItalic in .woff2 format */
+@font-face {
+	font-family: GentiumW;
+  font-weight: 800;
+  font-style: italic;
+	src: url("/assets/fonts/Gentium-ExtraBoldItalic.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "fallback for Gentium";
+  src: local("Arial");
+  ascent-override: 87.4023%;
+  descent-override: 28.3203%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: Bitter;
+  font-weight: 400;
+  src: url("/assets/fonts/Bitter-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "fallback for Bitter";
+  src: local("Arial");
+  ascent-override: 93.5%;
+  descent-override: 26.5%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: ezPsaltica;
+  font-weight: 400;
+  src: url("/assets/fonts/ezPsaltica.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ezFthora;
+  font-weight: 400;
+  src: url("/assets/fonts/ezFthora.ttf");
+  font-display: swap;
+}
+/* end fonts */
+
 
 :root {
     --main-color: ivory;
@@ -26,7 +141,7 @@
 }
 
 html {
-    font-family:GentiumW, serif;
+    font-family:GentiumW, "fallback for Gentium";
     font-size: 1.3rem;
     line-height: 1.6;
 }
