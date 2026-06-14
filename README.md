@@ -1,6 +1,5 @@
 # A Byzantine ison player
-Use it for practice! Not for services, that's cringe! But I can't stop you.
-This is a proof-of-concept, early development.
+Live at [https://byzison.xyz].
 Inspired by [isonapp](https://isonapp.com/).
 
 
