@@ -1,6 +1,6 @@
 import { GamepadManager } from "./GamepadManager.js";
 import { SoundManager } from "./SoundManager.js";
-import { ScaleManager } from "./ScaleManager.js";
+import { ScaleManager } from "./ScaleManager.js?v=2";
 
 const MAX_PITCH_SHIFT = 6;
 const MIN_PITCH_SHIFT = -8;
