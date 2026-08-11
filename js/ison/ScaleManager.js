@@ -48,6 +48,11 @@ export class ScaleManager {
     return this.semitonesShift;
   }
 
+  setSemitonesShift(semitones) {
+    this.semitonesShift = semitones;
+    this._calculateBasisFrequency();
+  }
+
   changeSemitonesShift(semitonesChange) {
     this.semitonesShift += semitonesChange;
     this._calculateBasisFrequency();

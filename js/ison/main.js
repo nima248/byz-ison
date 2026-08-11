@@ -13,21 +13,23 @@ const GAMEPAD = "8bitdo_zero_2";
 
 const SETTINGS_LOCAL_STORAGE = "app_settings";
 
-const saved_settings = localStorage.getItem(SETTINGS_LOCAL_STORAGE);
-let settings;
-if (saved_settings) {
-  settings = JSON.parse(saved_settings);
-  console.log(settings);
-} else {
-  settings = {
-    audio_type: null,
-  };
-}
+const DEFAULT_SETTINGS = {
+  audio_type: null,
+  semitones_shift: -2,
+};
 
 function saveSettings() {
   localStorage.setItem(SETTINGS_LOCAL_STORAGE, JSON.stringify(settings));
-  console.log("saved settings");
-  console.log(settings);
+  console.log(`saved settings: ${JSON.stringify(settings)}`);
+}
+
+const saved_settings = localStorage.getItem(SETTINGS_LOCAL_STORAGE);
+let settings = DEFAULT_SETTINGS;
+if (saved_settings) {
+  settings = {
+    ...settings,
+    ...JSON.parse(saved_settings),
+  };
 }
 
 const soundManager = new SoundManager();
@@ -35,6 +37,7 @@ const audioType = settings["audio_type"] || DEFAULT_AUDIO_TYPE;
 console.log("initial audio type set to ", audioType);
 soundManager.initialise(audioType);
 const scaleManager = new ScaleManager();
+scaleManager.setSemitonesShift(settings["semitones_shift"]);
 const gamepadManager = new GamepadManager(GAMEPAD, (action) => {
   console.log("Gamepad action ", action);
   if (action == "off") {
@@ -164,6 +167,37 @@ async function noteHandler(button, gui_press = true) {
   }
 }
 
+function setPitchShift(newShift) {
+  const diff = newShift - scaleManager.getSemitonesShift();
+  scaleManager.setSemitonesShift(newShift);
+  setNotesAudioAvailableStatusAsync().then(() => loadAudioAvailableNotes());
+  if (activeNoteButton !== null) {
+    const freq = freqOfButton(activeNoteButton);
+    if (soundManager.haveAudioForFreq(freq)) {
+      soundManager.playFrequency(freq);
+    } else {
+      activeNoteButton.classList.add(NO_AUDIO_AVAILABLE_CLASS);
+      turnOffSound();
+    }
+  }
+
+  // update pitch buttons UI
+  pitchShiftP.textContent = newShift;
+  if (diff > 0) {
+    pitchDownBtn.disabled = false;
+    if (newShift === MAX_PITCH_SHIFT) {
+      pitchUpBtn.disabled = true;
+    }
+  } else if (diff < 0) {
+    pitchUpBtn.disabled = false;
+    if (newShift === MIN_PITCH_SHIFT) {
+      pitchDownBtn.disabled = true;
+    }
+  }
+  settings["semitones_shift"] = newShift;
+  saveSettings();
+}
+
 body.addEventListener("click", async (event) => {
   turnOffSound();
   console.log("body clicked");
@@ -179,32 +213,8 @@ pitchButtons.forEach((button) => {
     event.stopPropagation();
 
     const semitonesChange = button.id === "pitch-up" ? 1 : -1;
-    scaleManager.changeSemitonesShift(semitonesChange);
-    setNotesAudioAvailableStatusAsync().then(() => loadAudioAvailableNotes());
-    if (activeNoteButton !== null) {
-      const freq = freqOfButton(activeNoteButton);
-      if (soundManager.haveAudioForFreq(freq)) {
-        soundManager.playFrequency(freq);
-      } else {
-        activeNoteButton.classList.add(NO_AUDIO_AVAILABLE_CLASS);
-        turnOffSound();
-      }
-    }
-
-    // update pitch buttons UI
-    const newPitchShift = scaleManager.getSemitonesShift();
-    pitchShiftP.textContent = newPitchShift;
-    if (semitonesChange === 1) {
-      pitchDownBtn.disabled = false;
-      if (newPitchShift === MAX_PITCH_SHIFT) {
-        pitchUpBtn.disabled = true;
-      }
-    } else {
-      pitchUpBtn.disabled = false;
-      if (newPitchShift === MIN_PITCH_SHIFT) {
-        pitchDownBtn.disabled = true;
-      }
-    }
+    const newPitchShift = scaleManager.getSemitonesShift() + semitonesChange;
+    setPitchShift(newPitchShift);
   });
 });
 
