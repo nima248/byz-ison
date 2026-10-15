@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/shared-styles.css">
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
-    <script type="module" src="/js/ison/main.js?v=5"></script>
+    <script type="module" src="/js/ison/main.js?v=6"></script>
   </head>
   <body>
     <header class="topnav">
@@ -91,5 +91,9 @@
         </div>
       </div>
     </aside>
+    <video id="nosleep-video" playsinline muted loop style="width: 1px; height: 1px; position: absolute; opacity: 0.01; pointer-events: none;">
+      <!-- A tiny transparent/black 1-second WebM or MP4 source -->
+      <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc29t..." type="video/mp4">
+    </video>
   </body>
 </html>

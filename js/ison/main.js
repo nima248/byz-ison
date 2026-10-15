@@ -163,6 +163,7 @@ async function noteHandler(button, gui_press = true) {
     button.classList.add(ACTIVE_NOTE_CLASS);
     activeNoteButton = button;
     const freq = freqOfButton(button);
+    enableNoSleep();
     soundManager.playFrequency(freq);
   }
 }
@@ -283,3 +284,15 @@ audioTypeButtons.forEach((button) => {
     }
   });
 });
+
+const noSleepVideo = document.getElementById('nosleep-video');
+
+function enableNoSleep() {
+  noSleepVideo.play().catch(err => {
+    console.log('Video wake lock blocked: ', err);
+  });
+}
+
+function disableNoSleep() {
+  noSleepVideo.pause();
+}
