@@ -8,7 +8,7 @@ import tone_generator
 from pathlib import Path
 import json
 
-VERSION = 2  # for cache busting
+VERSION = 4  # for cache busting
 
 def generate_audio_file_manifest(audio_dir):
     FILE_FORMATS = ['mp3', 'opus']
