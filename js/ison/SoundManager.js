@@ -97,7 +97,7 @@ export class SoundManager {
   }
 
   startFetchAudioManifest() {
-    return fetch(audioDir + "audio-files.json")
+    return fetch(audioDir + "audio-files.json?v=2")
       .then((response) => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);

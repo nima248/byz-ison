@@ -8,6 +8,8 @@ import tone_generator
 from pathlib import Path
 import json
 
+VERSION = 2  # for cache busting
+
 def generate_audio_file_manifest(audio_dir):
     FILE_FORMATS = ['mp3', 'opus']
     save_file = audio_dir / 'audio-files.json'
@@ -29,7 +31,7 @@ def generate_audio_file_manifest(audio_dir):
         for category_dir in dirs:
             this_category = {}
             files = [
-                f.name
+                f'{f.name}?v={VERSION}'
                 for f in sorted(category_dir.iterdir())
                 if f.is_file() and f.suffix.lower() == f'.{format}'
             ]
@@ -42,6 +44,7 @@ def generate_audio_file_manifest(audio_dir):
             this_format[category_dir.name] = this_category
         data[format] = this_format
 
+    data["version"] = str(VERSION)
     with save_file.open('w', encoding='utf-8') as f:
         json.dump(data, f, indent=2)
 
@@ -49,10 +52,13 @@ def generate_audio_file_manifest(audio_dir):
     for format, categories in data.items():
         n_notes = 0
         n_files = 0
-        for _, notes in categories.items():
-            n_notes += len(notes)
-            for note, files in notes.items():
-                n_files += len(files)
+        try:
+            for _, notes in categories.items():
+                n_notes += len(notes)
+                for note, files in notes.items():
+                    n_files += len(files)
+        except AttributeError:
+            pass
         print(f'  - {format}: {len(categories)} categories, {n_notes} notes, {n_files} files')
 
 
