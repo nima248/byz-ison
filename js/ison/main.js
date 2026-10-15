@@ -279,6 +279,7 @@ audioTypeButtons.forEach((button) => {
       if (!playing) {
         turnOffSound();
       }
+      loadAudioAvailableNotes();
     }
   });
 });
