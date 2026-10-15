@@ -83,6 +83,338 @@
         "Gsh3.mp3"
       ]
     },
+    "drone1": {
+      "A2": [
+        "A2.mp3"
+      ],
+      "A3": [
+        "A3.mp3"
+      ],
+      "Ash2": [
+        "Ash2.mp3"
+      ],
+      "Ash3": [
+        "Ash3.mp3"
+      ],
+      "B2": [
+        "B2.mp3"
+      ],
+      "B3": [
+        "B3.mp3"
+      ],
+      "C2": [
+        "C2.mp3"
+      ],
+      "C3": [
+        "C3.mp3"
+      ],
+      "C4": [
+        "C4.mp3"
+      ],
+      "Csh2": [
+        "Csh2.mp3"
+      ],
+      "Csh3": [
+        "Csh3.mp3"
+      ],
+      "Csh4": [
+        "Csh4.mp3"
+      ],
+      "D2": [
+        "D2.mp3"
+      ],
+      "D3": [
+        "D3.mp3"
+      ],
+      "D4": [
+        "D4.mp3"
+      ],
+      "Dsh2": [
+        "Dsh2.mp3"
+      ],
+      "Dsh3": [
+        "Dsh3.mp3"
+      ],
+      "E2": [
+        "E2.mp3"
+      ],
+      "E3": [
+        "E3.mp3"
+      ],
+      "F2": [
+        "F2.mp3"
+      ],
+      "F3": [
+        "F3.mp3"
+      ],
+      "Fsh2": [
+        "Fsh2.mp3"
+      ],
+      "Fsh3": [
+        "Fsh3.mp3"
+      ],
+      "G2": [
+        "G2.mp3"
+      ],
+      "G3": [
+        "G3.mp3"
+      ],
+      "Gsh2": [
+        "Gsh2.mp3"
+      ],
+      "Gsh3": [
+        "Gsh3.mp3"
+      ]
+    },
+    "drone2": {
+      "A2": [
+        "A2.mp3"
+      ],
+      "A3": [
+        "A3.mp3"
+      ],
+      "Ash2": [
+        "Ash2.mp3"
+      ],
+      "Ash3": [
+        "Ash3.mp3"
+      ],
+      "B2": [
+        "B2.mp3"
+      ],
+      "B3": [
+        "B3.mp3"
+      ],
+      "C2": [
+        "C2.mp3"
+      ],
+      "C3": [
+        "C3.mp3"
+      ],
+      "C4": [
+        "C4.mp3"
+      ],
+      "Csh2": [
+        "Csh2.mp3"
+      ],
+      "Csh3": [
+        "Csh3.mp3"
+      ],
+      "Csh4": [
+        "Csh4.mp3"
+      ],
+      "D2": [
+        "D2.mp3"
+      ],
+      "D3": [
+        "D3.mp3"
+      ],
+      "D4": [
+        "D4.mp3"
+      ],
+      "Dsh2": [
+        "Dsh2.mp3"
+      ],
+      "Dsh3": [
+        "Dsh3.mp3"
+      ],
+      "E2": [
+        "E2.mp3"
+      ],
+      "E3": [
+        "E3.mp3"
+      ],
+      "F2": [
+        "F2.mp3"
+      ],
+      "F3": [
+        "F3.mp3"
+      ],
+      "Fsh2": [
+        "Fsh2.mp3"
+      ],
+      "Fsh3": [
+        "Fsh3.mp3"
+      ],
+      "G2": [
+        "G2.mp3"
+      ],
+      "G3": [
+        "G3.mp3"
+      ],
+      "Gsh2": [
+        "Gsh2.mp3"
+      ],
+      "Gsh3": [
+        "Gsh3.mp3"
+      ]
+    },
+    "drone3": {
+      "A2": [
+        "A2.mp3"
+      ],
+      "A3": [
+        "A3.mp3"
+      ],
+      "Ash2": [
+        "Ash2.mp3"
+      ],
+      "Ash3": [
+        "Ash3.mp3"
+      ],
+      "B2": [
+        "B2.mp3"
+      ],
+      "B3": [
+        "B3.mp3"
+      ],
+      "C2": [
+        "C2.mp3"
+      ],
+      "C3": [
+        "C3.mp3"
+      ],
+      "C4": [
+        "C4.mp3"
+      ],
+      "Csh2": [
+        "Csh2.mp3"
+      ],
+      "Csh3": [
+        "Csh3.mp3"
+      ],
+      "Csh4": [
+        "Csh4.mp3"
+      ],
+      "D2": [
+        "D2.mp3"
+      ],
+      "D3": [
+        "D3.mp3"
+      ],
+      "D4": [
+        "D4.mp3"
+      ],
+      "Dsh2": [
+        "Dsh2.mp3"
+      ],
+      "Dsh3": [
+        "Dsh3.mp3"
+      ],
+      "E2": [
+        "E2.mp3"
+      ],
+      "E3": [
+        "E3.mp3"
+      ],
+      "F2": [
+        "F2.mp3"
+      ],
+      "F3": [
+        "F3.mp3"
+      ],
+      "Fsh2": [
+        "Fsh2.mp3"
+      ],
+      "Fsh3": [
+        "Fsh3.mp3"
+      ],
+      "G2": [
+        "G2.mp3"
+      ],
+      "G3": [
+        "G3.mp3"
+      ],
+      "Gsh2": [
+        "Gsh2.mp3"
+      ],
+      "Gsh3": [
+        "Gsh3.mp3"
+      ]
+    },
+    "drone4": {
+      "A2": [
+        "A2.mp3"
+      ],
+      "A3": [
+        "A3.mp3"
+      ],
+      "Ash2": [
+        "Ash2.mp3"
+      ],
+      "Ash3": [
+        "Ash3.mp3"
+      ],
+      "B2": [
+        "B2.mp3"
+      ],
+      "B3": [
+        "B3.mp3"
+      ],
+      "C2": [
+        "C2.mp3"
+      ],
+      "C3": [
+        "C3.mp3"
+      ],
+      "C4": [
+        "C4.mp3"
+      ],
+      "Csh2": [
+        "Csh2.mp3"
+      ],
+      "Csh3": [
+        "Csh3.mp3"
+      ],
+      "Csh4": [
+        "Csh4.mp3"
+      ],
+      "D2": [
+        "D2.mp3"
+      ],
+      "D3": [
+        "D3.mp3"
+      ],
+      "D4": [
+        "D4.mp3"
+      ],
+      "Dsh2": [
+        "Dsh2.mp3"
+      ],
+      "Dsh3": [
+        "Dsh3.mp3"
+      ],
+      "E2": [
+        "E2.mp3"
+      ],
+      "E3": [
+        "E3.mp3"
+      ],
+      "F2": [
+        "F2.mp3"
+      ],
+      "F3": [
+        "F3.mp3"
+      ],
+      "Fsh2": [
+        "Fsh2.mp3"
+      ],
+      "Fsh3": [
+        "Fsh3.mp3"
+      ],
+      "G2": [
+        "G2.mp3"
+      ],
+      "G3": [
+        "G3.mp3"
+      ],
+      "Gsh2": [
+        "Gsh2.mp3"
+      ],
+      "Gsh3": [
+        "Gsh3.mp3"
+      ]
+    },
     "vox1": {
       "A2": [
         "A2-b.mp3",
@@ -173,6 +505,338 @@
   },
   "opus": {
     "1.25": {
+      "A2": [
+        "A2.opus"
+      ],
+      "A3": [
+        "A3.opus"
+      ],
+      "Ash2": [
+        "Ash2.opus"
+      ],
+      "Ash3": [
+        "Ash3.opus"
+      ],
+      "B2": [
+        "B2.opus"
+      ],
+      "B3": [
+        "B3.opus"
+      ],
+      "C2": [
+        "C2.opus"
+      ],
+      "C3": [
+        "C3.opus"
+      ],
+      "C4": [
+        "C4.opus"
+      ],
+      "Csh2": [
+        "Csh2.opus"
+      ],
+      "Csh3": [
+        "Csh3.opus"
+      ],
+      "Csh4": [
+        "Csh4.opus"
+      ],
+      "D2": [
+        "D2.opus"
+      ],
+      "D3": [
+        "D3.opus"
+      ],
+      "D4": [
+        "D4.opus"
+      ],
+      "Dsh2": [
+        "Dsh2.opus"
+      ],
+      "Dsh3": [
+        "Dsh3.opus"
+      ],
+      "E2": [
+        "E2.opus"
+      ],
+      "E3": [
+        "E3.opus"
+      ],
+      "F2": [
+        "F2.opus"
+      ],
+      "F3": [
+        "F3.opus"
+      ],
+      "Fsh2": [
+        "Fsh2.opus"
+      ],
+      "Fsh3": [
+        "Fsh3.opus"
+      ],
+      "G2": [
+        "G2.opus"
+      ],
+      "G3": [
+        "G3.opus"
+      ],
+      "Gsh2": [
+        "Gsh2.opus"
+      ],
+      "Gsh3": [
+        "Gsh3.opus"
+      ]
+    },
+    "drone1": {
+      "A2": [
+        "A2.opus"
+      ],
+      "A3": [
+        "A3.opus"
+      ],
+      "Ash2": [
+        "Ash2.opus"
+      ],
+      "Ash3": [
+        "Ash3.opus"
+      ],
+      "B2": [
+        "B2.opus"
+      ],
+      "B3": [
+        "B3.opus"
+      ],
+      "C2": [
+        "C2.opus"
+      ],
+      "C3": [
+        "C3.opus"
+      ],
+      "C4": [
+        "C4.opus"
+      ],
+      "Csh2": [
+        "Csh2.opus"
+      ],
+      "Csh3": [
+        "Csh3.opus"
+      ],
+      "Csh4": [
+        "Csh4.opus"
+      ],
+      "D2": [
+        "D2.opus"
+      ],
+      "D3": [
+        "D3.opus"
+      ],
+      "D4": [
+        "D4.opus"
+      ],
+      "Dsh2": [
+        "Dsh2.opus"
+      ],
+      "Dsh3": [
+        "Dsh3.opus"
+      ],
+      "E2": [
+        "E2.opus"
+      ],
+      "E3": [
+        "E3.opus"
+      ],
+      "F2": [
+        "F2.opus"
+      ],
+      "F3": [
+        "F3.opus"
+      ],
+      "Fsh2": [
+        "Fsh2.opus"
+      ],
+      "Fsh3": [
+        "Fsh3.opus"
+      ],
+      "G2": [
+        "G2.opus"
+      ],
+      "G3": [
+        "G3.opus"
+      ],
+      "Gsh2": [
+        "Gsh2.opus"
+      ],
+      "Gsh3": [
+        "Gsh3.opus"
+      ]
+    },
+    "drone2": {
+      "A2": [
+        "A2.opus"
+      ],
+      "A3": [
+        "A3.opus"
+      ],
+      "Ash2": [
+        "Ash2.opus"
+      ],
+      "Ash3": [
+        "Ash3.opus"
+      ],
+      "B2": [
+        "B2.opus"
+      ],
+      "B3": [
+        "B3.opus"
+      ],
+      "C2": [
+        "C2.opus"
+      ],
+      "C3": [
+        "C3.opus"
+      ],
+      "C4": [
+        "C4.opus"
+      ],
+      "Csh2": [
+        "Csh2.opus"
+      ],
+      "Csh3": [
+        "Csh3.opus"
+      ],
+      "Csh4": [
+        "Csh4.opus"
+      ],
+      "D2": [
+        "D2.opus"
+      ],
+      "D3": [
+        "D3.opus"
+      ],
+      "D4": [
+        "D4.opus"
+      ],
+      "Dsh2": [
+        "Dsh2.opus"
+      ],
+      "Dsh3": [
+        "Dsh3.opus"
+      ],
+      "E2": [
+        "E2.opus"
+      ],
+      "E3": [
+        "E3.opus"
+      ],
+      "F2": [
+        "F2.opus"
+      ],
+      "F3": [
+        "F3.opus"
+      ],
+      "Fsh2": [
+        "Fsh2.opus"
+      ],
+      "Fsh3": [
+        "Fsh3.opus"
+      ],
+      "G2": [
+        "G2.opus"
+      ],
+      "G3": [
+        "G3.opus"
+      ],
+      "Gsh2": [
+        "Gsh2.opus"
+      ],
+      "Gsh3": [
+        "Gsh3.opus"
+      ]
+    },
+    "drone3": {
+      "A2": [
+        "A2.opus"
+      ],
+      "A3": [
+        "A3.opus"
+      ],
+      "Ash2": [
+        "Ash2.opus"
+      ],
+      "Ash3": [
+        "Ash3.opus"
+      ],
+      "B2": [
+        "B2.opus"
+      ],
+      "B3": [
+        "B3.opus"
+      ],
+      "C2": [
+        "C2.opus"
+      ],
+      "C3": [
+        "C3.opus"
+      ],
+      "C4": [
+        "C4.opus"
+      ],
+      "Csh2": [
+        "Csh2.opus"
+      ],
+      "Csh3": [
+        "Csh3.opus"
+      ],
+      "Csh4": [
+        "Csh4.opus"
+      ],
+      "D2": [
+        "D2.opus"
+      ],
+      "D3": [
+        "D3.opus"
+      ],
+      "D4": [
+        "D4.opus"
+      ],
+      "Dsh2": [
+        "Dsh2.opus"
+      ],
+      "Dsh3": [
+        "Dsh3.opus"
+      ],
+      "E2": [
+        "E2.opus"
+      ],
+      "E3": [
+        "E3.opus"
+      ],
+      "F2": [
+        "F2.opus"
+      ],
+      "F3": [
+        "F3.opus"
+      ],
+      "Fsh2": [
+        "Fsh2.opus"
+      ],
+      "Fsh3": [
+        "Fsh3.opus"
+      ],
+      "G2": [
+        "G2.opus"
+      ],
+      "G3": [
+        "G3.opus"
+      ],
+      "Gsh2": [
+        "Gsh2.opus"
+      ],
+      "Gsh3": [
+        "Gsh3.opus"
+      ]
+    },
+    "drone4": {
       "A2": [
         "A2.opus"
       ],
