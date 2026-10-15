@@ -4,7 +4,7 @@ import { ScaleManager } from "./ScaleManager.js?v=2";
 
 const MAX_PITCH_SHIFT = 6;
 const MIN_PITCH_SHIFT = -8;
-const DEFAULT_AUDIO_TYPE = "1.25";
+const DEFAULT_AUDIO_TYPE = "drone2";
 
 const ACTIVE_NOTE_CLASS = "active-note";
 const NO_AUDIO_AVAILABLE_CLASS = "no-audio-available";

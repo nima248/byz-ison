@@ -9,7 +9,7 @@ const N_VOICES_POLY = 10;
 const NOTE_CHANGE_SPREAD_MS = 350;
 const TOTAL_RESTART_TIME_MS = 9000; // should be approx length of audios
 
-const AUDIO_TYPES_MONO = ["1.25"]; // mono types will loop without fading
+const AUDIO_TYPES_MONO = ["1.25", "drone1", "drone2", "drone3", "drone4"]; // mono types will loop without fading
 const AUDIO_TYPES_POLY = ["vox1"]; // poly types will playback in unison and stagger fade
 
 export class SoundManager {
